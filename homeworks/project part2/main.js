@@ -61,7 +61,7 @@ detectLevel();
 function chooseOptExpenses() {
     for (let i = 0; i < 3; i++) {
         let chooseExpenses = prompt('Введите необязательную статью расходов', '');
-        appData.optionalExpenses[i] = chooseExpenses;
+        appData.optionalExpenses.i = chooseExpenses;
     }
 }
 

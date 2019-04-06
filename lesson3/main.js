@@ -41,3 +41,29 @@ let twelve = "12.2";
 console.log(Math.round(twelve));
 console.log(parseInt(twelve));
 console.log(parseFloat(twelve));
+
+
+
+function first () {
+    setTimeout( function(){
+        console.log(2);
+    }, 500);
+}
+
+function second() {
+    console.log(2);
+}
+
+first();
+second();
+
+function learnJS (lang, callback) {
+    console.log('Я учу ' + lang);
+    callback();
+}
+
+function done () {
+    console.log('Я прошёл 3й урок!');
+}
+
+learnJS('JavaScript', done);
